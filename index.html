@@ -3,96 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Moncada - Innovation</title>
+    <title>Andrea Moncada</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #496BB6; /* Nuovo colore di sfondo */
-            color: #D2E1FE; /* Colore testo principale */
+            background-color: #496BB6; /* Tuo blu scuro */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            text-align: center;
             padding: 20px;
             box-sizing: border-box;
         }
         .container {
             width: 100%;
-            max-width: 400px;
-        }
-        h1 { 
-            margin-bottom: 10px; 
-            font-weight: 700; 
-            letter-spacing: 1px; 
-            text-transform: uppercase;
-            color: white; /* Titolo in bianco per contrasto */
-        }
-        p { 
-            margin-top: 0; 
-            opacity: 0.9; 
-            font-weight: 300; 
-            margin-bottom: 40px; 
-            font-size: 1.2em;
-            color: #D2E1FE;
+            max-width: 380px; /* Leggermente più stretto per eleganza */
         }
         
+        /* Stile dei bottoni */
         .btn {
             display: flex;
             align-items: center;
-            justify-content: center;
-            background-color: #D2E1FE; /* Nuovo colore bottone */
-            color: #496BB6; /* Nuovo colore testo bottone */
-            padding: 18px;
-            margin: 15px 0;
+            /* Spinge il testo a sinistra e l'icona a destra */
+            justify-content: space-between; 
+            background-color: #D2E1FE; /* Bottone chiaro */
+            color: #496BB6; /* Testo blu scuro */
+            padding: 20px 30px; /* Più spazioso */
+            margin: 20px 0; /* Più spazio tra i bottoni */
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 18px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-            width: 100%; /* Occupa tutta la larghezza del container */
-            box-sizing: border-box; /* Include padding nella larghezza */
+            border-radius: 60px; /* Arrotondamento più pronunciato */
+            font-weight: 700;
+            font-size: 20px; /* Testo più grande */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* Ombra più morbida */
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+            box-sizing: border-box;
         }
-        .btn:hover { 
-            transform: translateY(-3px); 
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            background-color: white; /* Diventa bianco al passaggio del mouse per effetto premium */
         }
-        .btn:active { 
-            transform: scale(0.98); 
+        .btn:active { transform: scale(0.98); }
+
+        /* Stile delle nuove icone sferiche */
+        .icon-sphere {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 42px;  /* Dimensione fissa */
+            height: 42px; /* Dimensione fissa */
+            background-color: white; /* Sfondo bianco per contrasto */
+            color: #496BB6; /* Testo interno blu */
+            border-radius: 50%; /* Cerchio perfetto */
+            font-weight: 800;
+            font-size: 16px;
+            border: 3px solid #496BB6; /* Bordo blu spesso */
+            margin-left: 20px; /* Spazio tra testo e icona */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        
-        .footer { 
-            margin-top: 50px; 
-            font-size: 14px; 
-            opacity: 0.7;
-            color: #D2E1FE;
-        }
-        .icon { 
-            margin-right: 12px;
-            font-size: 1.3em;
-        }
+
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>ANDREA MONCADA</h1>
-        <p>Chef de projet Innovation</p>
-
-        <a href="https://www.linkedin.com/in/andrea-moncada1405/" class="btn" target="_blank">
-            <span class="icon">in</span> Mon profil LinkedIn
+        <a href="https://www.linkedin.com/in/andrea-moncada1405/" class="btn">
+            Profil LinkedIn
+            <span class="icon-sphere">in</span>
         </a>
 
-        <a href="https://drive.google.com/file/d/1MO4X5viJqT1NV_-_9huUJdy6qTDpufWp/view?usp=sharing" class="btn" target="_blank">
-            <span class="icon">📄</span> Voir mon CV
+        <a href="https://drive.google.com/file/d/1MO4X5viJqT1NV_-_9huUJdy6qTDpufWp/view?usp=sharing" class="btn">
+            Voir mon CV
+            <span class="icon-sphere" style="font-size: 14px;">CV</span>
         </a>
-    </div>
-
-    <div class="footer">
-        © 2026 Andrea Moncada
     </div>
 
 </body>

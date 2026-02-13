@@ -7,9 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            /* Applicazione del font Josefin Sans a tutta la pagina */
             font-family: 'Josefin Sans', sans-serif;
-            background-color: #496BB6; /* Tuo blu scuro */
+            background-color: #496BB6;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -28,15 +27,15 @@
         .btn {
             display: flex;
             align-items: center;
-            /* Allinea gli elementi all'inizio (sinistra) */
-            justify-content: flex-start; 
-            background-color: #D2E1FE; /* Bottone chiaro */
-            color: #496BB6; /* Testo blu scuro */
-            padding: 20px 25px; /* Padding laterale ridotto leggermente */
+            /* Spinge il testo a sinistra e l'icona a destra */
+            justify-content: space-between; 
+            background-color: #D2E1FE;
+            color: #496BB6;
+            padding: 20px 25px;
             margin: 20px 0;
             text-decoration: none;
             border-radius: 60px;
-            font-weight: 700; /* Josefin Sans in grassetto */
+            font-weight: 700;
             font-size: 20px;
             box-shadow: 0 6px 15px rgba(0,0,0,0.15);
             transition: transform 0.3s, box-shadow 0.3s;
@@ -61,25 +60,19 @@
             color: #496BB6;
             border-radius: 50%;
             border: 3px solid #496BB6;
-            margin-right: 20px; /* Spazio a destra tra icona e testo */
+            margin-left: 20px; /* Spazio a sinistra tra testo e icona */
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            flex-shrink: 0; /* Impedisce all'icona di schiacciarsi */
+            flex-shrink: 0;
         }
 
-        /* Stile specifico per imitare il font di LinkedIn */
-        .linkedin-font {
-            font-family: Arial, Helvetica, sans-serif; /* Font sans-serif generico */
+        /* Stile UNICO per imitare il font di LinkedIn su entrambi */
+        .brand-style {
+            font-family: Arial, Helvetica, sans-serif; /* Font generico pesante */
             font-weight: 900; /* Grassetto extra pesante */
-            font-size: 18px; /* Leggermente più grande per impatto */
-            letter-spacing: -1px; /* Lettere più vicine come nel logo */
+            font-size: 18px;
+            letter-spacing: -1px; /* Lettere molto vicine */
         }
         
-        /* Stile per il testo "CV" */
-        .cv-font {
-            font-weight: 700;
-            font-size: 15px;
-        }
-
     </style>
 </head>
 <body>
@@ -87,13 +80,13 @@
     <div class="container">
         
         <a href="https://www.linkedin.com/in/andrea-moncada1405/" class="btn">
-            <span class="icon-sphere linkedin-font">in</span>
             Profil LinkedIn
+            <span class="icon-sphere brand-style">in</span>
         </a>
 
         <a href="https://drive.google.com/file/d/1MO4X5viJqT1NV_-_9huUJdy6qTDpufWp/view?usp=sharing" class="btn">
-            <span class="icon-sphere cv-font">CV</span>
             Voir mon CV
+            <span class="icon-sphere brand-style">CV</span>
         </a>
     </div>
 

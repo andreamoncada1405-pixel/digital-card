@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Josefin Sans', sans-serif;
-            background-color: #496BB6; /* Tuo blu scuro */
+            background-color: #496BB6;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -21,32 +21,32 @@
 
         .container {
             width: 100%;
-            max-width: 350px; /* Larghezza ottimale per i bottoni */
+            /* RIDOTTO: Da 350px a 280px per bottoni più compatti */
+            max-width: 280px; 
             text-align: center;
         }
         
-        /* STILE IMMAGINE TESTATA (AM + Ruolo) */
         .header-img {
             width: 100%;
-            max-width: 300px; /* Dimensione massima per non farla enorme */
+            max-width: 300px;
             height: auto;
-            margin-bottom: 40px; /* Spazio prima dei bottoni */
+            margin-bottom: 40px;
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
 
-        /* STILE BOTTONI (Pillole Azzurre) */
         .btn {
             display: flex;
             align-items: center;
-            /* Allinea al centro verticalmente */
-            background-color: #D2E1FE; /* Tuo azzurro chiaro */
-            color: #496BB6; /* Testo blu scuro */
-            padding: 12px 20px; /* Spaziatura interna */
-            margin: 20px 0; /* Spazio tra i bottoni */
+            /* MODIFICA: Allinea il contenuto a sinistra, non sparso */
+            justify-content: flex-start; 
+            background-color: #D2E1FE;
+            color: #496BB6;
+            padding: 12px 25px; /* Aumentato padding laterale */
+            margin: 20px 0;
             text-decoration: none;
-            border-radius: 50px; /* Pillola perfetta */
+            border-radius: 50px;
             font-weight: 700;
             font-size: 18px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
@@ -62,19 +62,18 @@
         }
         .btn:active { transform: scale(0.98); }
 
-        /* STILE ICONE DENTRO I BOTTONI */
         .btn-icon {
-            width: 44px; /* Dimensione fissa per le icone */
+            width: 44px;
             height: 44px;
-            margin-right: 20px; /* Spazio tra icona e testo */
-            flex-shrink: 0; /* Impedisce all'icona di schiacciarsi */
+            /* MODIFICA: Aumentato spazio tra icona e testo (era 20px) */
+            margin-right: 25px; 
+            flex-shrink: 0;
         }
 
-        /* Centro il testo otticamente */
         .btn-text {
-            flex-grow: 1; /* Il testo occupa lo spazio rimanente */
-            text-align: left; /* O 'center' se preferisci il testo al centro del pulsante */
-            padding-right: 10px; /* Bilanciamento ottico */
+            text-align: left;
+            /* Correzione ottica: sposto leggermente il testo per centrarlo visivamente */
+            padding-top: 2px; 
         }
 
     </style>
@@ -92,7 +91,7 @@
 
         <a href="https://drive.google.com/file/d/1MO4X5viJqT1NV_-_9huUJdy6qTDpufWp/view?usp=sharing" class="btn">
             <img src="cv.png" alt="CV" class="btn-icon">
-            <span class="btn-text">Voir mon CV</span>
+            <span class="btn-text">Curriculum Vitae</span>
         </a>
 
     </div>

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Moncada</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>AM. - Innovation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Josefin Sans', sans-serif;
-            background-color: #496BB6;
+            background-color: #496BB6; /* Tuo blu scuro */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -18,76 +18,83 @@
             padding: 20px;
             box-sizing: border-box;
         }
+
         .container {
             width: 100%;
-            max-width: 380px;
+            max-width: 350px; /* Larghezza ottimale per i bottoni */
+            text-align: center;
         }
         
-        /* Stile dei bottoni */
+        /* STILE IMMAGINE TESTATA (AM + Ruolo) */
+        .header-img {
+            width: 100%;
+            max-width: 300px; /* Dimensione massima per non farla enorme */
+            height: auto;
+            margin-bottom: 40px; /* Spazio prima dei bottoni */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* STILE BOTTONI (Pillole Azzurre) */
         .btn {
             display: flex;
             align-items: center;
-            /* Spinge il testo a sinistra e l'icona a destra */
-            justify-content: space-between; 
-            background-color: #D2E1FE;
-            color: #496BB6;
-            padding: 20px 25px;
-            margin: 20px 0;
+            /* Allinea al centro verticalmente */
+            background-color: #D2E1FE; /* Tuo azzurro chiaro */
+            color: #496BB6; /* Testo blu scuro */
+            padding: 12px 20px; /* Spaziatura interna */
+            margin: 20px 0; /* Spazio tra i bottoni */
             text-decoration: none;
-            border-radius: 60px;
+            border-radius: 50px; /* Pillola perfetta */
             font-weight: 700;
-            font-size: 20px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 18px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
             width: 100%;
             box-sizing: border-box;
         }
+
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
             background-color: white;
         }
         .btn:active { transform: scale(0.98); }
 
-        /* Stile delle icone sferiche */
-        .icon-sphere {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 42px;
-            height: 42px;
-            background-color: white;
-            color: #496BB6;
-            border-radius: 50%;
-            border: 3px solid #496BB6;
-            margin-left: 20px; /* Spazio a sinistra tra testo e icona */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            flex-shrink: 0;
+        /* STILE ICONE DENTRO I BOTTONI */
+        .btn-icon {
+            width: 44px; /* Dimensione fissa per le icone */
+            height: 44px;
+            margin-right: 20px; /* Spazio tra icona e testo */
+            flex-shrink: 0; /* Impedisce all'icona di schiacciarsi */
         }
 
-        /* Stile UNICO per imitare il font di LinkedIn su entrambi */
-        .brand-style {
-            font-family: Arial, Helvetica, sans-serif; /* Font generico pesante */
-            font-weight: 900; /* Grassetto extra pesante */
-            font-size: 18px;
-            letter-spacing: -1px; /* Lettere molto vicine */
+        /* Centro il testo otticamente */
+        .btn-text {
+            flex-grow: 1; /* Il testo occupa lo spazio rimanente */
+            text-align: left; /* O 'center' se preferisci il testo al centro del pulsante */
+            padding-right: 10px; /* Bilanciamento ottico */
         }
-        
+
     </style>
 </head>
 <body>
 
     <div class="container">
         
+        <img src="header.png" alt="Andrea Moncada - Chef de projet Innovation" class="header-img">
+        
         <a href="https://www.linkedin.com/in/andrea-moncada1405/" class="btn">
-            Profil LinkedIn
-            <span class="icon-sphere brand-style">in</span>
+            <img src="linkedin.png" alt="in" class="btn-icon">
+            <span class="btn-text">Profil LinkedIn</span>
         </a>
 
         <a href="https://drive.google.com/file/d/1MO4X5viJqT1NV_-_9huUJdy6qTDpufWp/view?usp=sharing" class="btn">
-            Voir mon CV
-            <span class="icon-sphere brand-style">CV</span>
+            <img src="cv.png" alt="CV" class="btn-icon">
+            <span class="btn-text">Voir mon CV</span>
         </a>
+
     </div>
 
 </body>

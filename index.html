@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Moncada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            /* Applicazione del font Josefin Sans a tutta la pagina */
+            font-family: 'Josefin Sans', sans-serif;
             background-color: #496BB6; /* Tuo blu scuro */
             display: flex;
             flex-direction: column;
@@ -19,24 +21,24 @@
         }
         .container {
             width: 100%;
-            max-width: 380px; /* Leggermente più stretto per eleganza */
+            max-width: 380px;
         }
         
         /* Stile dei bottoni */
         .btn {
             display: flex;
             align-items: center;
-            /* Spinge il testo a sinistra e l'icona a destra */
-            justify-content: space-between; 
+            /* Allinea gli elementi all'inizio (sinistra) */
+            justify-content: flex-start; 
             background-color: #D2E1FE; /* Bottone chiaro */
             color: #496BB6; /* Testo blu scuro */
-            padding: 20px 30px; /* Più spazioso */
-            margin: 20px 0; /* Più spazio tra i bottoni */
+            padding: 20px 25px; /* Padding laterale ridotto leggermente */
+            margin: 20px 0;
             text-decoration: none;
-            border-radius: 60px; /* Arrotondamento più pronunciato */
-            font-weight: 700;
-            font-size: 20px; /* Testo più grande */
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* Ombra più morbida */
+            border-radius: 60px;
+            font-weight: 700; /* Josefin Sans in grassetto */
+            font-size: 20px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
             transition: transform 0.3s, box-shadow 0.3s;
             width: 100%;
             box-sizing: border-box;
@@ -44,25 +46,38 @@
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            background-color: white; /* Diventa bianco al passaggio del mouse per effetto premium */
+            background-color: white;
         }
         .btn:active { transform: scale(0.98); }
 
-        /* Stile delle nuove icone sferiche */
+        /* Stile delle icone sferiche */
         .icon-sphere {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 42px;  /* Dimensione fissa */
-            height: 42px; /* Dimensione fissa */
-            background-color: white; /* Sfondo bianco per contrasto */
-            color: #496BB6; /* Testo interno blu */
-            border-radius: 50%; /* Cerchio perfetto */
-            font-weight: 800;
-            font-size: 16px;
-            border: 3px solid #496BB6; /* Bordo blu spesso */
-            margin-left: 20px; /* Spazio tra testo e icona */
+            width: 42px;
+            height: 42px;
+            background-color: white;
+            color: #496BB6;
+            border-radius: 50%;
+            border: 3px solid #496BB6;
+            margin-right: 20px; /* Spazio a destra tra icona e testo */
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex-shrink: 0; /* Impedisce all'icona di schiacciarsi */
+        }
+
+        /* Stile specifico per imitare il font di LinkedIn */
+        .linkedin-font {
+            font-family: Arial, Helvetica, sans-serif; /* Font sans-serif generico */
+            font-weight: 900; /* Grassetto extra pesante */
+            font-size: 18px; /* Leggermente più grande per impatto */
+            letter-spacing: -1px; /* Lettere più vicine come nel logo */
+        }
+        
+        /* Stile per il testo "CV" */
+        .cv-font {
+            font-weight: 700;
+            font-size: 15px;
         }
 
     </style>
@@ -70,14 +85,15 @@
 <body>
 
     <div class="container">
+        
         <a href="https://www.linkedin.com/in/andrea-moncada1405/" class="btn">
+            <span class="icon-sphere linkedin-font">in</span>
             Profil LinkedIn
-            <span class="icon-sphere">in</span>
         </a>
 
         <a href="https://drive.google.com/file/d/1MO4X5viJqT1NV_-_9huUJdy6qTDpufWp/view?usp=sharing" class="btn">
+            <span class="icon-sphere cv-font">CV</span>
             Voir mon CV
-            <span class="icon-sphere" style="font-size: 14px;">CV</span>
         </a>
     </div>
 

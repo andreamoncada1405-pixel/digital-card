@@ -21,7 +21,6 @@
 
         .container {
             width: 100%;
-            /* RIDOTTO: Da 350px a 280px per bottoni più compatti */
             max-width: 280px; 
             text-align: center;
         }
@@ -39,11 +38,10 @@
         .btn {
             display: flex;
             align-items: center;
-            /* MODIFICA: Allinea il contenuto a sinistra, non sparso */
             justify-content: flex-start; 
             background-color: #D2E1FE;
             color: #496BB6;
-            padding: 12px 25px; /* Aumentato padding laterale */
+            padding: 12px 25px; 
             margin: 20px 0;
             text-decoration: none;
             border-radius: 50px;
@@ -65,14 +63,12 @@
         .btn-icon {
             width: 44px;
             height: 44px;
-            /* MODIFICA: Aumentato spazio tra icona e testo (era 20px) */
             margin-right: 25px; 
             flex-shrink: 0;
         }
 
         .btn-text {
             text-align: left;
-            /* Correzione ottica: sposto leggermente il testo per centrarlo visivamente */
             padding-top: 2px; 
         }
 
@@ -92,6 +88,11 @@
         <a href="https://drive.google.com/file/d/1MO4X5viJqT1NV_-_9huUJdy6qTDpufWp/view?usp=sharing" class="btn">
             <img src="cv.png" alt="CV" class="btn-icon">
             <span class="btn-text">Curriculum Vitae</span>
+        </a>
+
+        <a href="https://andrea-moncada.me" class="btn" target="_blank">
+            <img src="web.png" alt="Web" class="btn-icon">
+            <span class="btn-text">Site Internet</span>
         </a>
 
     </div>
